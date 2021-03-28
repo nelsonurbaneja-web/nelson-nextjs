@@ -8,9 +8,9 @@ const PageHeader = () => {
       <div><img src="/nextjs.svg" alt="logo next"/></div>
       <nav>
         <ul className={styles.flexMenu}>
-          <li><Link href="/"><a>Inicio</a></Link></li>
-          <li><Link href="/blog"><a>Mi blog</a></Link></li>
-          <li><Link href="/blog/3"><a>Mi blog 3</a></Link></li>
+          <li><Link href="/">Inicio</Link></li>
+          <li><Link href="/blog">Mi blog</Link></li>
+          <li><Link href="/productos">Productos</Link></li>
         </ul>
       </nav>
     </header>

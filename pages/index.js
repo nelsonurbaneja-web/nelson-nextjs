@@ -24,6 +24,18 @@ export default function Home() {
           width={500}
           height={500}
         />
+        <Image
+          src="/img.jpeg"
+          alt="Picture of the author 2"
+          width={300}
+          height={300}
+        />
+        <Image
+          src="/persona.png"
+          alt="Persona"
+          width={500}
+          height={500}
+        />
       </main>
     </>
   )
