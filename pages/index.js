@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import { NextSeo } from 'next-seo';
 
 export default function Home() {
@@ -17,6 +18,12 @@ export default function Home() {
       <main>
         <h1>Bienvenido</h1>
         <span>{process.env.API_URL}</span>
+        <Image
+          src="/nextjs.svg"
+          alt="Picture of the author"
+          width={500}
+          height={500}
+        />
       </main>
     </>
   )

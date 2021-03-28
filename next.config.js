@@ -6,9 +6,9 @@ module.exports = ( phase ) => {
     APP_NAME: 'ninweb.net',
     API_URL: (() => {
       if(isDevelopment) {
-        return 'https://jsonplaceholder.typicode.com/posts'
+        return 'https://jsonplaceholder.typicode.com'
       } else {
-        return 'https://myapi'
+        return 'https://jsonplaceholder.typicode.com'
       }
     })()
   }
