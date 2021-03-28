@@ -33,11 +33,13 @@ const Productos = ({ products }) =>  {
   )
 }
 
-Productos.getInitialProps = async () => {
+export const getStaticProps = async () => {
   const response = await fetch("https://porto-store.herokuapp.com/product")
   const data = await response.json()
   return {
-    products: data
+    props: {
+      products: data
+    }
   }
 }
 
