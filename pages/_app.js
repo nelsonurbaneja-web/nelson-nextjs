@@ -1,7 +1,25 @@
-import '../styles/globals.css'
+import PageHeader from "../components/PageHeader/PageHeader"
+import Nprogress from 'nprogress'
+import Router from 'next/router'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import '../styles/base.scss'
+
+Router.onRouteChangeStart = url => {
+  console.log(url)
+  Nprogress.start();
 }
 
-export default MyApp
+Router.onRouteChangeComplete = () => Nprogress.done()
+Router.onRouteChangeError = () => Nprogress.done()
+
+const App = ({ Component, pageProps }) => {
+ 
+  return (
+    <>
+    <PageHeader/>
+    <Component {...pageProps} />
+    </>
+  )
+}
+
+export default App
