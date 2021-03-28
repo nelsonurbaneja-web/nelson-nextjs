@@ -1,0 +1,25 @@
+@import '../../styles/mixin';
+
+$breakPoints: (
+  s: 320px,
+  m: 640px,
+  l: 1024px,
+  xl: 1400px,
+);
+
+.main_header {
+  background-color: var(--red-color);
+  @include from(l) {
+    background-color: var(--blue-color);
+  }
+}
+
+.flexMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    font-size: var(--title-4);
+  }
+}

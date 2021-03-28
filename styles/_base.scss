@@ -1,12 +1,20 @@
 @import 'nprogress/nprogress.css';
 
+
 body {
   background-color: azure;
   h4 {
-    color: red;
+    font-size: var(--title-4);
+    color: var( --red-color);
+    @include from(l) {
+      color: var(--blue-color);
+    }
   }
 }
 
+img {
+  max-width: 100%;
+}
 header {
   display: flex;
 }

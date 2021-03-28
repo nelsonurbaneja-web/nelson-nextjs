@@ -1,0 +1,85 @@
+$breakPoints: (
+  s: 320px,
+  m: 640px,
+  l: 1024px,
+  xl: 1400px,
+);
+
+
+:root {
+
+  // Defino el color por defecto del boton principal
+  --bg-color-btn: #53A1D9;
+  --color-btn: white;
+
+  // css colores
+  --red-color: #E52E3C;
+  --blue-color: #53A1D9;
+  --black-color: #262626;
+  --gray-bold : #707070;
+  --gray : #EBEBEB;
+  --bluelight-color : #E0F2FF;
+  --gradient: linear-gradient(#53A1D9, #E52E3C);
+
+   // css other props
+  --radius-btn: 24px;
+  --height-btn: 40px;
+  --header-height: 130px;
+  --max-width: 1170px;
+
+
+  // Variables de apilamineto z-index css 
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+  // Variables de fuente
+  --title-1: 3.25rem;
+  --title-2: 2.5rem;
+  --title-3: 1.275rem;
+  --title-4: 1.125rem;
+  --title-5: 1rem;
+  --body-font-size: 1rem;
+  --small-font-size: 0.825rem;
+
+  @include from(m) {
+    --title-1: 4.25rem;
+    --title-2: 2.5rem;
+    --title-3: 1.275rem;
+    --title-4: 1.125rem;
+    --title-5: 1rem;
+    --body-font-size: 1rem;
+    --small-font-size: 0.825rem;
+  }
+  @include from(l) {
+    --title-1: 4.688rem;
+    --title-2: 2.5rem;
+    --title-3: 1.875rem;
+    --title-4: 1.125rem;
+    --title-5: 1rem;
+    --body-font-size: 1rem;
+    --small-font-size: 0.825rem;
+  }
+}
+
+// scss colores
+$red-color: #E52E3C;
+$blue-color: #53A1D9;
+$black-color: #262626;
+$gray-bold : #707070;
+$gray : #EBEBEB;
+$bluelight-color : #E0F2FF;
+$gradient: linear-gradient(#53A1D9, #E52E3C);
+
+// scss other props
+$radius-btn: 24px;
+$height-btn: 45px;
+ 
+// Variables de apilamineto z-index scss 
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;

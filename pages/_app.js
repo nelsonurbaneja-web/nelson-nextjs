@@ -1,8 +1,7 @@
 import PageHeader from "../components/PageHeader/PageHeader"
 import Nprogress from 'nprogress'
 import Router from 'next/router'
-
-import '../styles/base.scss'
+import '../styles/styles.scss'
 
 Router.onRouteChangeStart = url => {
   console.log(url)
