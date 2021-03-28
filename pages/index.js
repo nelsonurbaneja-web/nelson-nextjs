@@ -16,7 +16,7 @@ export default function Home() {
         ]}
       />
       <main>
-        <h1>Bienvenido</h1>
+        <h1>Bienvenido de nuevo 2021</h1>
         <span>{process.env.API_URL}</span>
         <Image
           src="/nextjs.svg"
